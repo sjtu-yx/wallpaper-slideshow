@@ -1,0 +1,66 @@
+body {
+    background: #fff;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color:#000;
+    margin: 0;
+    padding: 0;
+  }
+  .swiper-container {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+
+  }
+  .index_tittle {
+    text-align: center;
+    font-family: '幼圆';
+    font-size: 48px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    opacity: 0.9;
+    text-shadow: 4px 2px 2px rgb(199, 199, 190);
+    background-clip: content-box;
+  }
+  .backgr {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 66;
+    opacity: 1;
+    background-attachment: fixed;
+  }
+  .start {
+    z-index: -99;
+    opacity: 0.9;
+  }
+  .characters {
+    width: 600px;
+    height: 300px;
+    position: absolute;
+    left: 330px;
+    top: 50px;
+    background-image: -webkit-linear-gradient(left,rgb(18, 87, 133),#66ffff 10%,#cc00ff 20%,#CC00CC 30%, #CCCCFF 40%, #00FFFF 50%,#CCCCFF 60%,#CC00CC 70%,#CC00FF 80%,#66FFFF 90%,blue 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-background-size: 200% 100%; 
+    -webkit-animation: masked-animation 4s linear infinite;
+    font-size: 35px;
+    z-index: 99;
+  }
+  @keyframes masked-animation {
+    0% {
+        background-position: 0  0;
+    }
+    100% {
+        background-position: -100%  0;
+    }
+}
